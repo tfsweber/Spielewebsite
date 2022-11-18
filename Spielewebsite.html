@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicTacToe</title>
+    <link rel="stylesheet" href="css.css">
+    <script language="javascript" type="text/javascript" src="javascript.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom text-bg-info mb-3 border-primary">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <span class="fs-4">Placeholder</span>
       </a>
@@ -23,18 +25,33 @@
   </div>
 
 
-  <div class="Spielanleitung">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div id="Spielanleitung">
+    <p>Ziel des Spieles eine Reihe mit seinen Zeichen zu füllen. Wobei die Spieler immer abwechselnd ein Zeichen setzten. Die Spieler dürfen ihre Zeichen nicht überschreiben.</p>
   </div>
 
-  <div class="TicTacToe
+  <div id="TicTacToe">
+    <table>
+      <tr>
+        <td><button type="button" id="1" onclick="turn()">1</button></td>
+        <td><button type="button" id="2" onclick="turn()">2</button></td>
+        <td><button type="button" id="3" onclick="turn()">3</button></td>
+      </tr>
 
-   ">
-    
+      <tr>
+        <td><button type="button" id="4" onclick="turn()">4</button></td>
+        <td><button type="button" id="5" onclick="turn()">5</button></td>
+        <td><button type="button" id="6" onclick="turn()">6</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="7" onclick="turn()">7</button></td>
+        <td><button type="button" id="8" onclick="turn()">8</button></td>
+        <td><button type="button" id="9" onclick="turn()">9</button></td>
+      </tr>
+    </table>
   </div>
 
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top sticky-bottom">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top sticky-bottom text-bg-light border-dark mb-3">
     <p class="col-md-4 mb-0 text-muted">Spielewebsite</p>
 
     <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
